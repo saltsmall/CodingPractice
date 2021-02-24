@@ -1,0 +1,1 @@
+g++ p10992.cpp && type inp | a.exe > output && fc out output

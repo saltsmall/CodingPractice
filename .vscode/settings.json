@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "xlocale": "cpp",
+        "xstring": "cpp",
+        "string_view": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "queue": "cpp",
+        "type_traits": "cpp",
+        "xhash": "cpp",
+        "xutility": "cpp",
+        "utility": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "stack": "cpp"
+    }
+}

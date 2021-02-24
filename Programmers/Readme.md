@@ -1,0 +1,1 @@
+g++ pParenthesisConversion.cpp && type inp | a.exe > output && fc out output
