@@ -4,6 +4,9 @@
 
 using namespace std;
 
+
+
+
 int solution(vector<int> people, int limit) {
     int answer = 0;
     int size = people.size();
