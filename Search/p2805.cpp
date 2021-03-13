@@ -5,29 +5,31 @@ https://www.acmicpc.net/problem/2805
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <cstdio>
 
 using namespace std;
 
 int main(){
-    int ans;
+    long long ans;
     int N, M;
     cin >> N >> M;
 
-    vector<int> trees;
+    vector<long long> trees;
     for(int i=0; i<N; i++){
-        int num; 
+        long long num; 
         cin >> num;
         trees.push_back(num);
     }
-    int min = 1;
-    int max = *max_element(trees.begin(), trees.end());
+
+    long long min = 0;
+    long long max = *max_element(trees.begin(), trees.end());
     
     while(min<= max){
-        int mid = (min+max)/2;
+        long long mid = (min+max)/2;
 
-        int m=0;
-        for(int tree: trees){
-            if(tree>=mid) m += (tree - mid); 
+        long long m=0;
+        for(long long tree: trees){
+            if(tree>mid) m += (tree - mid); 
         }
 
         if(m<M){
@@ -41,9 +43,7 @@ int main(){
         }
     }
 
-    cout << ans;
-
-
+    printf("%d", ans);
 
     return 0;
 }

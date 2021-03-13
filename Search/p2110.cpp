@@ -23,17 +23,16 @@ int main(){
 
     int min = 1;
     int max = houses.back()-houses.front();
-    cout<< max << "\n";
     while(min<=max){
         int mid = (min+max)/2;
         int c = 1;
+        int start = houses.front();
         for(int i=1;i<houses.size();i++){
-            if(mid <= (houses[i]-houses[i-1])){
+            if(mid <= (houses[i]-start)){
                 c++;
+                start = houses[i];
             }
         }
-        cout << "max : " << max << " min : " << min << "\n";
-        cout << "mid : " << mid << " c : " << c << "\n";
         if(c<C){
             max = mid -1;
         }
