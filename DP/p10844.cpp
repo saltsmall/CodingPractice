@@ -28,6 +28,7 @@ int main(){
             else dp[i][j] = (dp[i-1][j-1] + dp[i-1][j+1])%1000000000;
         }
     }
+    
     long long ans = 0;
     for(int i=0; i<=9; i++){
         ans += dp[N][i];
