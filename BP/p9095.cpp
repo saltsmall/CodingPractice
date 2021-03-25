@@ -18,7 +18,7 @@ int main(){
     for(int i=0; i<N; i++){
         int num;
         cin >> num;
-        cout << dp[num];
+        cout << dp[num] << "\n";
     }
 
     return 0;
