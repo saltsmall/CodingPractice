@@ -33,13 +33,12 @@ int main(){
         broken[number] = true;
     }
 
-    int ans = abs(N-100);
+    int ans = abs(K-N);
     for(int i = 0; i<=1000000; i++){
-        if(isBroken(i)){
-            //현재 숫자로부터 거리(+ or -) + 숫자 버튼 입력 
-            int temp = abs(N-i) + to_string(i).length();
-            ans = min(ans, temp);
-        }
+        //현재 숫자로부터 거리(+ or -) + 숫자 버튼 입력 
+        int temp = abs(N-i) + to_string(i).length();
+        ans = min(ans, temp);
+
     }
     
     cout << ans;
