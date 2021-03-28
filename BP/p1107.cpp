@@ -41,7 +41,7 @@ int main(){
             ans = min(ans, temp);
         }
     }
-
+    
     cout << ans;
 
     return 0;
