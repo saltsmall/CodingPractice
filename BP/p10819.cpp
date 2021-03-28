@@ -23,7 +23,6 @@ int main(){
             temp += abs(vec[i]-vec[i+1]);
         }
         ans = max(ans, temp);
-        if(ans == 62) for(int i=0; i<N; i++) cout << vec[i] << " ";
     }while(next_permutation(vec.begin(), vec.end()));
 
     cout << ans << "\n";
